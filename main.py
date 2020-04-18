@@ -1,7 +1,7 @@
 from searches.naive_string_matcher import naive_string_matcher
 from searches.Rabin_Karp_matcher import Rabin_Karp_matcher
 from searches.finite_automaton_matcher import finite_automaton_matcher
-
+from searches.KMP_matcher import KMP_matcher
 
 if __name__ == "__main__":
     T = "Today is a good day"
@@ -16,3 +16,6 @@ if __name__ == "__main__":
 
     print("\nfinite automatom matcher:")
     finite_automaton_matcher(T,P)
+
+    print("\nKMP matcher:")
+    KMP_matcher(T, P)
